@@ -101,12 +101,15 @@ docker run --name hello-nginx -d -p 8080:80 -v /home/miguel/Sources/hello-nginx:
 
 ![hello-nginx-sample](captures/hello_nginx_docker_sample.png)
 
+
 ## Start WSL
+
 ```
 wsl genie -s
 ```
 
 ## Stop WSL
+
 ```
 wsl --shutdown
 ```
