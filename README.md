@@ -85,3 +85,24 @@ sudo apt install docker-ce
 
 sudo systemctl status docker
 ```
+
+## Configure docker without user
+
+```
+sudo usermod -aG docker ${USER}
+```
+
+## Start WSL
+```
+wsl genie -s
+```
+
+## Stop WSL
+```
+wsl --shutdown
+```
+
+## Some links
+- WSL Genie: https://github.com/arkane-systems/genie
+- WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
+- Docker install in Ubuntu 22.04: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
