@@ -86,11 +86,20 @@ sudo apt install docker-ce
 sudo systemctl status docker
 ```
 
+![docker-status](captures/docker_status.png)
+
 ## Configure docker without user
 
 ```
 sudo usermod -aG docker ${USER}
 ```
+
+## Test docker
+```
+docker run --name hello-nginx -d -p 8080:80 -v /home/miguel/Sources/hello-nginx:/usr/share/nginx/html:ro nginx
+```
+
+![hello-nginx-sample](captures/hello_nginx_docker_sample.png)
 
 ## Start WSL
 ```
