@@ -127,4 +127,5 @@ wsl --shutdown
 ## Some links
 - WSL Genie: https://github.com/arkane-systems/genie
 - WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
-- Docker install in Ubuntu 22.04: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04
+- Install docker-ce in Ubuntu 20.04: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
+- Install docker-compose in Ubuntu 20.04: https://github.com/masalinas/doc-docker-windows
