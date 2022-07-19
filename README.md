@@ -139,3 +139,4 @@ mkdir -pm o=,ug=rwx "$DOCKER_LOG_DIR"
 - WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
 - Install docker-ce in Ubuntu 20.04: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
 - Install docker-compose in Ubuntu 20.04: https://github.com/masalinas/doc-docker-windows
+- Install docker in WSL Windows: https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9
