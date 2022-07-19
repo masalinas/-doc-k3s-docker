@@ -124,6 +124,16 @@ wsl genie -s
 wsl --shutdown
 ```
 
+## Install Docker without genie
+
+Add this script to your .bashrc file of your distribution
+```
+DOCKER_DISTRO="Ubuntu"
+DOCKER_LOG_DIR=$HOME/docker_logs
+mkdir -pm o=,ug=rwx "$DOCKER_LOG_DIR"
+/mnt/c/Windows/System32/wsl.exe -d $DOCKER_DISTRO sh -c "nohup sudo -b dockerd < /dev/null > $DOCKER_LOG_DIR/dockerd.log 2>&1"
+```
+
 ## Some links
 - WSL Genie: https://github.com/arkane-systems/genie
 - WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
