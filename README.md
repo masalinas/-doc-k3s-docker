@@ -124,7 +124,7 @@ wsl genie -s
 wsl --shutdown
 ```
 
-## Install Docker without genie
+## Install Docker without genie
 
 Add this script to your .bashrc file of your distribution
 ```
