@@ -66,7 +66,7 @@ Remove **multipathd.service** error
 sudo systemctl disable multipathd.service
 ```
 
-## Install Docker
+## Install Docker
 
 ```
 sudo apt update
@@ -102,7 +102,7 @@ docker run --name hello-nginx -d -p 8080:80 -v /home/miguel/Sources/hello-nginx:
 
 ![hello-nginx-sample](captures/hello_nginx_docker_sample.png)
 
-## Install docker-compose
+## Install docker-compose
 
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
