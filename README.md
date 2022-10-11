@@ -66,7 +66,7 @@ Remove **multipathd.service** error
 sudo systemctl disable multipathd.service
 ```
 
-## Install Docker
+## Install Docker CE
 
 ```
 sudo apt update
@@ -124,7 +124,7 @@ wsl genie -s
 wsl --shutdown
 ```
 
-## Install Docker without genie
+## Install Docker CE without genie
 
 Add this script to your .bashrc file of your distribution
 ```
