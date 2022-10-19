@@ -152,7 +152,7 @@ Now execute this distribution
 wsl -d Ubuntu-20.04
 ```
 
-Now install docker as previous explain
+Now install docker and docker-compose explained above
 
 Finally to start dockerd when the distribution start, update the **.bashrc** file for the **root** user under /root folder. and add this line:
 ```
