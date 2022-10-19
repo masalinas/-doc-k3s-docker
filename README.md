@@ -191,6 +191,15 @@ To check what distribution are runnig executed this command
 wsl --list --run
 ```
 
+To start automatically our distrinution, save the command
+
+```
+wsl -d Ubuntu-20.04 -e sudo service docker start
+```
+
+inside a file called for example **wsl_setup.bat** in **C:\Users\masal\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup folder**
+and restart windows
+
 ## Some links
 - WSL Genie: https://github.com/arkane-systems/genie
 - WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
