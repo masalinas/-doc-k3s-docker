@@ -181,6 +181,11 @@ Show default index.html
 curl localhost
 ```
 
+To sto all distributions
+```
+wsl --shutdown
+```
+
 To check what distribution are runnig executed this command
 ```
 wsl --list --run
