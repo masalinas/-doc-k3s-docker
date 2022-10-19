@@ -134,6 +134,37 @@ mkdir -pm o=,ug=rwx "$DOCKER_LOG_DIR"
 /mnt/c/Windows/System32/wsl.exe -d $DOCKER_DISTRO sh -c "nohup sudo -b dockerd < /dev/null > $DOCKER_LOG_DIR/dockerd.log 2>&1"
 ```
 
+## Install Docker CE from tarball
+
+Download Ubuntu tarball like this
+```
+curl https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64-wsl.rootfs.tar.gz
+```
+
+Then execute this command to create a distribution for this tarball
+```
+wsl --import <Distribution Name> <Installation Folder> <Ubuntu WSL2 Image Tarball path>
+wsl --import Ubuntu-20.04 "C:\Users\masal\Documents\ubuntu2" .\ubuntu-20.04-server-cloudimg-amd64-wsl.rootfs.tar.gz
+```
+
+Now execute this distribution
+```
+wsl -d Ubuntu-20.04
+```
+
+Now install docker as previous explain
+
+Finally to start dockerd when the distribution start, update the **.bashrc** file for the **root** user under /root folder. and add this line:
+```
+service start docker
+```
+
+We can stop and start again our new Ubuntu distribution to access to docker
+```
+wsl --shutdown
+wsl -d Ubuntu-20.04
+```
+
 ## Some links
 - WSL Genie: https://github.com/arkane-systems/genie
 - WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
