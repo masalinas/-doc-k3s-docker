@@ -159,10 +159,31 @@ Finally to start dockerd when the distribution start, update the **.bashrc** fil
 service start docker
 ```
 
+or from powershell executing this command
+```
+wsl -d Ubuntu-20.04 -e sudo service docker start
+```
+
 We can stop and start again our new Ubuntu distribution to access to docker
 ```
 wsl --shutdown
 wsl -d Ubuntu-20.04
+```
+
+Check docker with Apache 2 http web server
+Start web server
+```
+docker run --name web -d -p 80:80 --restar always httpd
+```
+
+Show default index.html
+```
+curl localhost
+```
+
+To check what distribution are runnig executed this command
+```
+wsl --list --run
 ```
 
 ## Some links
