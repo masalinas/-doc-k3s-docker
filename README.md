@@ -200,6 +200,13 @@ wsl -d Ubuntu-20.04 -e sudo service docker start
 inside a file called for example **wsl_setup.bat** in **C:\Users\masal\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup folder**
 and restart windows
 
+Execute a WSL command from Windows
+
+For example to execute docker CLI from windows
+
+```
+wsl -d Ubuntu-20.04 docker ps
+```
 ## Some links
 - WSL Genie: https://github.com/arkane-systems/genie
 - WSL Genie systemd errors:https://github.com/arkane-systems/genie/wiki/Systemd-units-known-to-be-problematic-under-WSL
